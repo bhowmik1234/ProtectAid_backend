@@ -17,6 +17,10 @@ app.use(cors({
 }));
 connect();
 
+app.get('/', (req, res)=>{
+  res.send("working server !!!");
+})
+
 app.get('/sos/statusCounts', async (req, res) => {
   try {
     const sentCount = await SOSRequest.countDocuments({ status: 'sent' });
