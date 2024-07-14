@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5500;
 
 app.use(express.json());
 app.use(cors({
-  origin: "https://protect-aid-client-9wpj-jxvy4zkru-bhowmiks-projects.vercel.app",
+  origin: "https://protect-aid-client-9wpj-3up6tmtwq-bhowmiks-projects.vercel.app/",
   methods: ['POST', 'GET', 'PUT', 'DELETE']
 }));
 connect();
